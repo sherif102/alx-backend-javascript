@@ -1,4 +1,4 @@
-import { uploadPhoto, createUser } from '../utils';
+import { uploadPhoto, createUser } from './utils';
 
 export default async function asyncUploadUser() {
   return Promise.allSettled([uploadPhoto(), createUser()]).then((results) => {
